@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX MC | Store</title>
+  <meta name="description" content="APEX MC official Minecraft network store">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">A</span>
+      <span>APEX <b>MC</b></span>
+    </a>
+
+    <div class="player">
+      <div class="avatar">?</div>
+      <div>
+        <small>WELCOME</small>
+        <strong>Guest</strong>
+      </div>
+      <button class="login-btn">LOGIN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">OFFICIAL NETWORK STORE</span>
+        <h1>POWER UP YOUR<br><span>APEX EXPERIENCE.</span></h1>
+        <p>Ranks, coins, cosmetics and exclusive bundles for the APEX MC network.</p>
+
+        <div class="hero-actions">
+          <a href="#featured" class="primary-btn">EXPLORE STORE</a>
+          <a href="#categories" class="secondary-btn">CATEGORIES</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orb"></div>
+        <div class="apex-badge">APEX<br><small>MC</small></div>
+        <div class="floating-card card-one">⚡<span>RANKS</span></div>
+        <div class="floating-card card-two">◆<span>COINS</span></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong id="players">1,284</strong><span>ONLINE PLAYERS</span></div>
+      <div class="stat"><strong id="discord">8,421</strong><span>DISCORD MEMBERS</span></div>
+      <div class="stat"><strong>24/7</strong><span>SERVER ONLINE</span></div>
+    </section>
+
+    <section id="categories" class="panel">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">BROWSE</span>
+          <h2>SELECT A CATEGORY</h2>
+        </div>
+        <span class="menu-icon">☰</span>
+      </div>
+
+      <div class="categories">
+        <button class="category active" data-category="all">ALL <small>Everything</small></button>
+        <button class="category" data-category="ranks">RANKS <small>Exclusive perks</small></button>
+        <button class="category" data-category="coins">COINS <small>In-game currency</small></button>
+        <button class="category" data-category="bundles">BUNDLES <small>Best value</small></button>
+      </div>
+    </section>
+
+    <section id="featured" class="products-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">HAND PICKED</span>
+          <h2>FEATURED PACKAGES</h2>
+        </div>
+        <span class="live-dot">● LIVE STORE</span>
+      </div>
+
+      <div class="products">
+        <article class="product rank god" data-category="ranks">
+          <div class="product-icon">♛</div>
+          <div class="product-info">
+            <span class="tag">POPULAR</span>
+            <h3>APEX GOD</h3>
+            <p>+5,000 Coins · Exclusive perks</p>
+          </div>
+          <div class="price">$27.00</div>
+          <button class="buy" data-product="APEX GOD" data-price="27.00">BUY NOW</button>
+        </article>
+
+        <article class="product rank supreme" data-category="ranks">
+          <div class="product-icon">✦</div>
+          <div class="product-info">
+            <span class="tag">RANK</span>
+            <h3>SUPREME</h3>
+            <p>+3,200 Coins · Premium perks</p>
+          </div>
+          <div class="price">$22.00</div>
+          <button class="buy" data-product="SUPREME" data-price="22.00">BUY NOW</button>
+        </article>
+
+        <article class="product coins" data-category="coins">
+          <div class="product-icon">◈</div>
+          <div class="product-info">
+            <span class="tag">COINS</span>
+            <h3>15,600 COINS</h3>
+            <p>Spend them across the APEX network.</p>
+          </div>
+          <div class="price">$12.20</div>
+          <button class="buy" data-product="15,600 COINS" data-price="12.20">BUY NOW</button>
+        </article>
+
+        <article class="product bundle" data-category="bundles">
+          <div class="product-icon">⚔</div>
+          <div class="product-info">
+            <span class="tag">BUNDLE</span>
+            <h3>WARRIOR PACK</h3>
+            <p>Rank upgrade + coins + exclusive cosmetic.</p>
+          </div>
+          <div class="price">$19.99</div>
+          <button class="buy" data-product="WARRIOR PACK" data-price="19.99">BUY NOW</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="support">
+      <div>
+        <span class="eyebrow">NEED HELP?</span>
+        <h2>WE'VE GOT YOUR BACK.</h2>
+        <p>Questions about a purchase? Contact APEX MC support through Discord.</p>
+      </div>
+      <a class="primary-btn" href="#">OPEN DISCORD</a>
+    </section>
+
+    <section class="gift panel">
+      <span class="eyebrow">GIFT CARDS</span>
+      <h2>CHECK GIFT CARD BALANCE</h2>
+      <div class="gift-form">
+        <input id="gift" type="text" placeholder="Card Number">
+        <button id="checkGift">CHECK</button>
+      </div>
+      <p id="giftMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">APEX MC</div>
+    <div class="footer-links">
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Impressum</a>
+    </div>
+    <p>© 2026 APEX MC. All rights reserved.</p>
+    <small>Not affiliated with Mojang AB.</small>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="close">×</button>
+      <span class="eyebrow">CHECKOUT</span>
+      <h2 id="modalProduct">PRODUCT</h2>
+      <p>Checkout integration will be connected here.</p>
+      <div class="modal-price" id="modalPrice">$0.00</div>
+      <button class="primary-btn full">CONTINUE TO CHECKOUT</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
