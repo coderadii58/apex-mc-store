@@ -1,174 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APEX MC | Store</title>
-  <meta name="description" content="APEX MC official Minecraft network store">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08050d">
+<title>APEX MC | Minecraft Network</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="ambient ambient-1"></div>
-  <div class="ambient ambient-2"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#">
-      <span class="brand-mark">A</span>
-      <span>APEX <b>MC</b></span>
-    </a>
+<div class="bg-glow glow1"></div>
+<div class="bg-glow glow2"></div>
+<div class="grid-bg"></div>
 
-    <div class="player">
-      <div class="avatar">?</div>
-      <div>
-        <small>WELCOME</small>
-        <strong>Guest</strong>
-      </div>
-      <button class="login-btn">LOGIN</button>
+<header class="header">
+  <a href="#home" class="logo"><span>APEX</span> MC</a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#store">Store</a>
+    <a href="#support">Support</a>
+    <a href="#legal">Legal</a>
+  </nav>
+
+  <a href="https://discord.gg/u4PtamTG7"
+     target="_blank"
+     class="discord-btn">
+     Discord ↗
+  </a>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content reveal">
+
+    <div class="pill">
+      ⚡ JAVA + BEDROCK NETWORK
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">OFFICIAL NETWORK STORE</span>
-        <h1>POWER UP YOUR<br><span>APEX EXPERIENCE.</span></h1>
-        <p>Ranks, coins, cosmetics and exclusive bundles for the APEX MC network.</p>
+    <h1>
+      RISE ABOVE.<br>
+      <span>PLAY APEX.</span>
+    </h1>
 
-        <div class="hero-actions">
-          <a href="#featured" class="primary-btn">EXPLORE STORE</a>
-          <a href="#categories" class="secondary-btn">CATEGORIES</a>
-        </div>
-      </div>
+    <p>
+      Premium ranks, keys and coins for the APEX MC experience.
+    </p>
 
-      <div class="hero-art">
-        <div class="orb"></div>
-        <div class="apex-badge">APEX<br><small>MC</small></div>
-        <div class="floating-card card-one">⚡<span>RANKS</span></div>
-        <div class="floating-card card-two">◆<span>COINS</span></div>
-      </div>
-    </section>
+    <div class="hero-buttons">
 
-    <section class="stats">
-      <div class="stat"><strong id="players">1,284</strong><span>ONLINE PLAYERS</span></div>
-      <div class="stat"><strong id="discord">8,421</strong><span>DISCORD MEMBERS</span></div>
-      <div class="stat"><strong>24/7</strong><span>SERVER ONLINE</span></div>
-    </section>
+      <a href="#store" class="btn primary">
+        Browse Store
+      </a>
 
-    <section id="categories" class="panel">
-      <div class="section-title">
-        <div>
-          <span class="eyebrow">BROWSE</span>
-          <h2>SELECT A CATEGORY</h2>
-        </div>
-        <span class="menu-icon">☰</span>
-      </div>
+      <a href="https://discord.gg/u4PtamTG7"
+         target="_blank"
+         class="btn secondary">
+         Join Discord
+      </a>
 
-      <div class="categories">
-        <button class="category active" data-category="all">ALL <small>Everything</small></button>
-        <button class="category" data-category="ranks">RANKS <small>Exclusive perks</small></button>
-        <button class="category" data-category="coins">COINS <small>In-game currency</small></button>
-        <button class="category" data-category="bundles">BUNDLES <small>Best value</small></button>
-      </div>
-    </section>
-
-    <section id="featured" class="products-section">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">HAND PICKED</span>
-          <h2>FEATURED PACKAGES</h2>
-        </div>
-        <span class="live-dot">● LIVE STORE</span>
-      </div>
-
-      <div class="products">
-        <article class="product rank god" data-category="ranks">
-          <div class="product-icon">♛</div>
-          <div class="product-info">
-            <span class="tag">POPULAR</span>
-            <h3>APEX GOD</h3>
-            <p>+5,000 Coins · Exclusive perks</p>
-          </div>
-          <div class="price">$27.00</div>
-          <button class="buy" data-product="APEX GOD" data-price="27.00">BUY NOW</button>
-        </article>
-
-        <article class="product rank supreme" data-category="ranks">
-          <div class="product-icon">✦</div>
-          <div class="product-info">
-            <span class="tag">RANK</span>
-            <h3>SUPREME</h3>
-            <p>+3,200 Coins · Premium perks</p>
-          </div>
-          <div class="price">$22.00</div>
-          <button class="buy" data-product="SUPREME" data-price="22.00">BUY NOW</button>
-        </article>
-
-        <article class="product coins" data-category="coins">
-          <div class="product-icon">◈</div>
-          <div class="product-info">
-            <span class="tag">COINS</span>
-            <h3>15,600 COINS</h3>
-            <p>Spend them across the APEX network.</p>
-          </div>
-          <div class="price">$12.20</div>
-          <button class="buy" data-product="15,600 COINS" data-price="12.20">BUY NOW</button>
-        </article>
-
-        <article class="product bundle" data-category="bundles">
-          <div class="product-icon">⚔</div>
-          <div class="product-info">
-            <span class="tag">BUNDLE</span>
-            <h3>WARRIOR PACK</h3>
-            <p>Rank upgrade + coins + exclusive cosmetic.</p>
-          </div>
-          <div class="price">$19.99</div>
-          <button class="buy" data-product="WARRIOR PACK" data-price="19.99">BUY NOW</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="support">
-      <div>
-        <span class="eyebrow">NEED HELP?</span>
-        <h2>WE'VE GOT YOUR BACK.</h2>
-        <p>Questions about a purchase? Contact APEX MC support through Discord.</p>
-      </div>
-      <a class="primary-btn" href="#">OPEN DISCORD</a>
-    </section>
-
-    <section class="gift panel">
-      <span class="eyebrow">GIFT CARDS</span>
-      <h2>CHECK GIFT CARD BALANCE</h2>
-      <div class="gift-form">
-        <input id="gift" type="text" placeholder="Card Number">
-        <button id="checkGift">CHECK</button>
-      </div>
-      <p id="giftMessage"></p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">APEX MC</div>
-    <div class="footer-links">
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Impressum</a>
     </div>
-    <p>© 2026 APEX MC. All rights reserved.</p>
-    <small>Not affiliated with Mojang AB.</small>
-  </footer>
 
-  <div class="modal" id="modal">
-    <div class="modal-box">
-      <button class="close" id="close">×</button>
-      <span class="eyebrow">CHECKOUT</span>
-      <h2 id="modalProduct">PRODUCT</h2>
-      <p>Checkout integration will be connected here.</p>
-      <div class="modal-price" id="modalPrice">$0.00</div>
-      <button class="primary-btn full">CONTINUE TO CHECKOUT</button>
-    </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="hero-orb"></div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats reveal">
+
+  <div>
+    <strong>24/7</strong>
+    <span>NETWORK</span>
+  </div>
+
+  <div>
+    <strong>JAVA</strong>
+    <span>EDITION</span>
+  </div>
+
+  <div>
+    <strong>BEDROCK</strong>
+    <span>EDITION</span>
+  </div>
+
+  <div>
+    <strong>APEX</strong>
+    <span>COMMUNITY</span>
+  </div>
+
+</section>
+
+
+<!-- STORE -->
+
+<section class="section" id="store">
+
+  <div class="section-head reveal">
+
+    <div>
+      <div class="eyebrow">APEX STORE</div>
+
+      <h2>
+        Choose your <span>power.</span>
+      </h2>
+    </div>
+
+    <p>
+      Support the server and unlock exclusive perks.
+    </p>
+
+  </div>
+
+
+  <!-- CATEGORY TABS -->
+
+  <div class="tabs reveal">
+
+    <button class="tab active" data-filter="ranks">
+      Ranks
+    </button>
+
+    <button class="tab" data-filter="keys">
+      Keys
+    </button>
+
+    <button class="tab" data-filter="coins">
+      Coins
+    </button>
+
+  </div>
+
+
+  <!-- PRODUCTS -->
+
+  <div class="product-grid" id="products"></div>
+
+</section>
+
+
+<!-- SUPPORT -->
+
+<section class="support section reveal" id="support">
+
+  <div>
+
+    <div class="eyebrow">
+      NEED HELP?
+    </div>
+
+    <h2>
+      We've got your <span>back.</span>
+    </h2>
+
+    <p>
+      Questions about purchases, ranks or anything APEX MC?
+      Open a ticket in Discord.
+    </p>
+
+  </div>
+
+  <a href="https://discord.gg/u4PtamTG7"
+     target="_blank"
+     class="btn primary">
+     Contact on Discord ↗
+  </a>
+
+</section>
+
+
+<!-- GIFT -->
+
+<section class="gift section reveal">
+
+  <div class="gift-box">
+
+    <div class="eyebrow">
+      APEX GIFT CARD
+    </div>
+
+    <h2>
+      Gift the <span>grind.</span>
+    </h2>
+
+    <p>
+      Want to gift something to another player?
+      Contact our staff through Discord.
+    </p>
+
+    <a href="https://discord.gg/u4PtamTG7"
+       target="_blank"
+       class="btn secondary">
+       Ask Staff
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer id="legal">
+
+  <div class="footer-top">
+
+    <div>
+
+      <a href="#home" class="logo">
+        <span>APEX</span> MC
+      </a>
+
+      <p>
+        Premium Minecraft Network.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#"
+         onclick="showLegal('privacy');return false;">
+         Privacy Policy
+      </a>
+
+      <a href="#"
+         onclick="showLegal('terms');return false;">
+         Terms & Conditions
+      </a>
+
+      <a href="https://discord.gg/u4PtamTG7"
+         target="_blank">
+         Contact Us
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <span>
+      Developed by ADITYA
+    </span>
+
+    <span>
+      HELPER - JATIN
+    </span>
+
+    <span>
+      Not affiliated with Mojang AB.
+    </span>
+
+  </div>
+
+</footer>
+
+
+<!-- CHECKOUT -->
+
+<div class="modal" id="checkoutModal">
+
+  <div class="modal-card">
+
+    <button class="close"
+            onclick="closeModal()">
+      ×
+    </button>
+
+    <div class="eyebrow">
+      SECURE CHECKOUT
+    </div>
+
+    <h2>
+      Checkout
+    </h2>
+
+
+    <div class="checkout-product">
+
+      <span id="checkoutItem">
+        Item
+      </span>
+
+      <strong id="checkoutPrice">
+        ₹0
+      </strong>
+
+    </div>
+
+
+    <div class="payment-method">
+
+      <span>
+        PAYMENT METHOD
+      </span>
+
+      <div class="upi-selected">
+
+        🇮🇳
+
+        <b>
+          UPI
+        </b>
+
+        <small>
+          Fast & secure
+        </small>
+
+      </div>
+
+    </div>
+
+
+    <label>
+      Minecraft Username
+    </label>
+
+    <input
+      id="mcName"
+      type="text"
+      maxlength="32"
+      placeholder="Enter your Minecraft username"
+    >
+
+
+    <div class="upi-box">
+
+      <!-- QR WILL GO HERE LATER -->
+
+      <div class="qr-placeholder">
+
+        UPI<br>
+        QR
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Pay using UPI
+        </b>
+
+        <p>
+          Scan the QR code or use your UPI app.
+        </p>
+
+        <code id="upiId">
+          YOUR-UPI-ID@upi
+        </code>
+
+        <button
+          class="copy-btn"
+          onclick="copyUPI()">
+
+          Copy UPI ID
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <a
+      id="upiPay"
+      href="#"
+      class="btn primary full">
+
+      Pay via UPI ↗
+
+    </a>
+
+
+    <p class="notice">
+
+      After payment, send your payment screenshot
+      and Minecraft username in an APEX MC Discord ticket.
+
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- LEGAL -->
+
+<div class="modal" id="legalModal">
+
+  <div class="modal-card legal-card">
+
+    <button
+      class="close"
+      onclick="closeLegal()">
+
+      ×
+
+    </button>
+
+    <div id="legalContent"></div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+const UPI_ID = "YOUR-UPI-ID@upi";
+
+
+const data = {
+
+  ranks: [
+
+    {
+      name:"Elite",
+      price:49,
+      tag:"STARTER",
+      items:[
+        "Elite color",
+        "Elite prefix",
+        "Elite kit",
+        "/disposal",
+        "+2 Homes",
+        "+2 PV"
+      ]
+    },
+
+    {
+      name:"Vulture",
+      price:99,
+      tag:"POPULAR",
+      items:[
+        "Vulture color",
+        "Vulture prefix",
+        "Vulture kit",
+        "+4 PV",
+        "+3 Homes",
+        "/craft",
+        "/disposal"
+      ]
+    },
+
+    {
+      name:"Eagle",
+      price:199,
+      tag:"POWER",
+      items:[
+        "Eagle prefix",
+        "+6 PV",
+        "+5 Homes",
+        "/craft",
+        "/anvil",
+        "/disposal"
+      ]
+    },
+
+    {
+      name:"Dragon",
+      price:249,
+      tag:"ELITE",
+      items:[
+        "Dragon prefix",
+        "+8 PV",
+        "+6 Homes",
+        "Chat color",
+        "/anvil",
+        "/craft",
+        "/dispose"
+      ]
+    },
+
+    {
+      name:"Phoenix",
+      price:399,
+      tag:"ULTIMATE",
+      items:[
+        "Phoenix prefix",
+        "+12 PV",
+        "+8 Homes",
+        "/fly",
+        "/craft",
+        "/anvil",
+        "/dispose",
+        "Custom chat color"
+      ]
+    }
+
+  ],
+
+
+  keys: [
+
+    {
+      name:"Basic Key",
+      price:10,
+      tag:"KEY",
+      items:[
+        "1× Basic Key",
+        "Open the Basic Crate"
+      ]
+    },
+
+    {
+      name:"Epic Key",
+      price:30,
+      tag:"KEY",
+      items:[
+        "1× Epic Key",
+        "Open the Epic Crate"
+      ]
+    },
+
+    {
+      name:"Hyper Key",
+      price:40,
+      tag:"KEY",
+      items:[
+        "1× Hyper Key",
+        "Open the Hyper Crate"
+      ]
+    },
+
+    {
+      name:"Ace Key",
+      price:60,
+      tag:"KEY",
+      items:[
+        "1× Ace Key",
+        "Open the Ace Crate"
+      ]
+    },
+
+    {
+      name:"Phoenix Key",
+      price:80,
+      tag:"KEY",
+      items:[
+        "1× Phoenix Key",
+        "Open the Phoenix Crate"
+      ]
+    }
+
+  ],
+
+
+  coins: [
+
+    {
+      name:"50 Coins",
+      price:10,
+      tag:"COINS",
+      items:[
+        "50 APEX Coins",
+        "Instant delivery after verification"
+      ]
+    },
+
+    {
+      name:"100 Coins",
+      price:20,
+      tag:"COINS",
+      items:[
+        "100 APEX Coins",
+        "Instant delivery after verification"
+      ]
+    },
+
+    {
+      name:"210 Coins",
+      price:30,
+      tag:"COINS",
+      items:[
+        "210 APEX Coins",
+        "Instant delivery after verification"
+      ]
+    },
+
+    {
+      name:"330 Coins",
+      price:40,
+      tag:"COINS",
+      items:[
+        "330 APEX Coins",
+        "Instant delivery after verification"
+      ]
+    },
+
+    {
+      name:"460 Coins",
+      price:50,
+      tag:"COINS",
+      items:[
+        "460 APEX Coins",
+        "Instant delivery after verification"
+      ]
+    }
+
+  ]
+
+};
+
+
+let currentFilter = "ranks";
+
+
+function renderProducts(){
+
+  const box =
+    document.getElementById("products");
+
+
+  box.innerHTML =
+    data[currentFilter].map((p,i)=>`
+
+      <article
+        class="product reveal
+        ${i===1 && currentFilter==="ranks"
+        ? "featured"
+        : ""}">
+
+        ${
+          i===1 && currentFilter==="ranks"
+          ?
+          `<div class="featured-label">
+             MOST POPULAR
+           </div>`
+          :
+          ""
+        }
+
+
+        <div class="product-icon">
+
+          ${
+            currentFilter==="ranks"
+            ? "♛"
+            :
+            currentFilter==="keys"
+            ? "✦"
+            :
+            "◆"
+          }
+
+        </div>
+
+
+        <div class="product-tag">
+          ${p.tag}
+        </div>
+
+
+        <h3>
+          ${p.name}
+        </h3>
+
+
+        <div class="price">
+
+          ₹${p.price}
+
+          <small>
+            INR
+          </small>
+
+        </div>
+
+
+        <ul>
+
+          ${p.items.map(x=>`
+
+            <li>
+              ✓ ${x}
+            </li>
+
+          `).join("")}
+
+        </ul>
+
+
+        <button
+          class="buy-btn"
+          onclick="openCheckout('${p.name}',${p.price})">
+
+          Buy Now
+
+          <span>
+            →
+          </span>
+
+        </button>
+
+      </article>
+
+    `).join("");
+
+
+  observeReveals();
+
+}
+
+
+document
+.querySelectorAll(".tab")
+.forEach(tab=>{
+
+  tab.addEventListener("click",()=>{
+
+    document
+    .querySelectorAll(".tab")
+    .forEach(x=>
+      x.classList.remove("active")
+    );
+
+    tab.classList.add("active");
+
+    currentFilter =
+      tab.dataset.filter;
+
+    renderProducts();
+
+  });
+
+});
+
+
+function openCheckout(name,price){
+
+  document
+  .getElementById("checkoutItem")
+  .textContent = name;
+
+
+  document
+  .getElementById("checkoutPrice")
+  .textContent = "₹"+price;
+
+
+  document
+  .getElementById("upiId")
+  .textContent = UPI_ID;
+
+
+  const upi =
+    `upi://pay?pa=${encodeURIComponent(UPI_ID)}`+
+    `&pn=${encodeURIComponent("APEX MC")}`+
+    `&am=${price}&cu=INR`;
+
+
+  document
+  .getElementById("upiPay")
+  .href = upi;
+
+
+  document
+  .getElementById("checkoutModal")
+  .classList.add("show");
+
+
+  document.body.classList.add("locked");
+
+}
+
+
+function closeModal(){
+
+  document
+  .getElementById("checkoutModal")
+  .classList.remove("show");
+
+  document.body.classList.remove("locked");
+
+}
+
+
+function copyUPI(){
+
+  navigator.clipboard
+  ?.writeText(UPI_ID);
+
+
+  const button =
+    document.querySelector(".copy-btn");
+
+
+  button.textContent =
+    "Copied!";
+
+
+  setTimeout(()=>{
+
+    button.textContent =
+      "Copy UPI ID";
+
+  },1200);
+
+}
+
+
+const legal = {
+
+  privacy:`
+
+    <div class="eyebrow">
+      LEGAL
+    </div>
+
+    <h2>
+      Privacy Policy
+    </h2>
+
+    <p>
+      APEX MC may collect information you
+      voluntarily provide during support or
+      purchases, such as your Minecraft
+      username and payment proof.
+    </p>
+
+    <p>
+      This information is used for purchase
+      verification, support and service delivery.
+    </p>
+
+    <p>
+      Do not send passwords, OTPs or other
+      confidential account information to staff.
+    </p>
+
+  `,
+
+
+  terms:`
+
+    <div class="eyebrow">
+      LEGAL
+    </div>
+
+    <h2>
+      Terms & Conditions
+    </h2>
+
+    <p>
+      Digital purchases are intended for use
+      on APEX MC.
+    </p>
+
+    <p>
+      Purchase verification may require payment
+      proof and your Minecraft username.
+    </p>
+
+    <p>
+      Do not attempt payment fraud, chargeback
+      abuse or impersonation.
+    </p>
+
+    <p>
+      For purchase issues, contact APEX MC
+      staff through Discord.
+    </p>
+
+  `
+
+};
+
+
+function showLegal(type){
+
+  document
+  .getElementById("legalContent")
+  .innerHTML = legal[type];
+
+
+  document
+  .getElementById("legalModal")
+  .classList.add("show");
+
+
+  document.body.classList.add("locked");
+
+}
+
+
+function closeLegal(){
+
+  document
+  .getElementById("legalModal")
+  .classList.remove("show");
+
+
+  document.body.classList.remove("locked");
+
+}
+
+
+document
+.querySelectorAll(".modal")
+.forEach(modal=>{
+
+  modal.addEventListener("click",e=>{
+
+    if(e.target === modal){
+
+      modal.classList.remove("show");
+
+      document.body
+      .classList.remove("locked");
+
+    }
+
+  });
+
+});
+
+
+function observeReveals(){
+
+  const observer =
+    new IntersectionObserver(
+
+      entries=>{
+
+        entries.forEach(entry=>{
+
+          if(entry.isIntersecting){
+
+            entry.target
+            .classList.add("visible");
+
+            observer
+            .unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+
+      {threshold:.08}
+
+    );
+
+
+  document
+  .querySelectorAll(".reveal:not(.visible)")
+  .forEach(x=>observer.observe(x));
+
+}
+
+
+renderProducts();
+observeReveals();
+
+</script>
+
 </body>
-</html>
+  </html>
